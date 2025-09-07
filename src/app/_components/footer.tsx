@@ -1,9 +1,12 @@
-import golden from "../../../public/images/golden.png";
-import royal from "../../../public/images/royal.png";
-import primier from "../../../public/images/primier.png";
-import whiskas from "../../../public/images/whiskas.png";
-import natural from "../../../public/images/natural.png";
+import ppa from "../../../public/images/LOGOPPAFABRICA2021.png";
+import intelbras from "../../../public/images/Logomarca_Intelbras_verde.png";
+import control_id from "../../../public/images/1694084013-control-id-logo.webp";
+import jfl from "../../../public/images/electroelectronic-logo-jfl.jpg";
+import ipec from "../../../public/images/trava_magnetica_m150_ipec_574_10_20220713132037.webp";
+import hikvision from "../../../public/images/New-Hikvision-logo-1024x724-1.jpg";
+
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
+
 import Image from "next/image";
 import {
   FacebookLogo,
@@ -11,13 +14,17 @@ import {
   YoutubeLogo,
 } from "@phosphor-icons/react/dist/ssr";
 
+// Importar o logo da ADR System (assumindo que seja o mesmo usado no header ou uma versão específica)
+// Certifique-se de que o caminho para o seu logo esteja correto
+import adrLogo from "../../../public/images/Design sem nome (7).png"; // <-- Adicione esta linha
+
 const brands = [
-  { name: "Royal Canin", logo: royal },
-  { name: "Golden", logo: golden },
-  { name: "Primier", logo: primier },
-  { name: "Formula Natural", logo: natural },
-  { name: "Whiskas", logo: whiskas },
-  { name: "Golden", logo: golden },
+  { name: "Intelbras", logo: intelbras },
+  { name: "ppa", logo: ppa },
+  { name: "Control-id", logo: control_id },
+  { name: "JFL", logo: jfl },
+  { name: "ipec", logo: ipec },
+  { name: "hikvision", logo: hikvision },
 ];
 
 export function Footer() {
@@ -54,10 +61,16 @@ export function Footer() {
 
         <footer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 mt-5">
           <div>
-            <h3 className="text-2xl font-semibold mb-2">Pet Shop Dev</h3>
-            <p className="mb-4">
-              Cuidando do seu melhor amigo com amor e dedicação.
-            </p>
+            {/* SUBSTITUÍMOS O H3 PELO COMPONENTE IMAGE */}
+            <Image
+              src={adrLogo} // Usamos o logo importado
+              alt="Logo ADR System"
+              width={250} // Ajuste a largura conforme desejar para o rodapé
+              height={70} // Ajuste a altura proporcionalmente
+              quality={100}
+              className="mb-2" // Adicione uma margem inferior para separar do parágrafo
+            />
+            <p className="mb-4">Compromisso com a sua segurança.</p>
             <a
               data-aos="fade-up"
               data-aos-delay="500"

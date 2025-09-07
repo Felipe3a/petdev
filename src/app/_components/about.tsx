@@ -1,7 +1,6 @@
 import Image from "next/image";
 import about1Img from "../../../public/images/about-1.png";
 import about2Img from "../../../public/images/about-2.png";
-import { Check, MapPin } from "lucide-react";
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
 
 export function About() {
@@ -44,43 +43,26 @@ export function About() {
             <h2 className="text-4xl font-bold">SOBRE</h2>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Molestiae cum illo dolores praesentium fugit beatae, qui ipsam
-              dolorem suscipit officiis nostrum voluptatem in architecto aut
-              laboriosam consequuntur alias? Architecto, consequuntur.
+              A ADR System nasceu com o propósito de levar segurança, tecnologia
+              e praticidade para residências, condominios e empresas. Atuamos
+              com soluções modernas em segurança eletrônica e automação de
+              portas e portões, sempre priorizando a qualidade e a satisfação
+              dos nossos clientes. Nosso diferencial está no atendimento
+              personalizado e na busca constante por inovação, oferecendo
+              projetos sob medida que garantem eficiência, confiança e
+              tranquilidade. Mais do que instalar equipamentos, acreditamos em
+              construir relacionamentos de confiança, onde cada cliente sabe que
+              pode contar conosco em todos os momentos.
             </p>
-
-            <ul className="space-y-4">
-              <li className="flex items-center gap-2">
-                <Check className="text-red-500" />
-                Aberto desde 2006.
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="text-red-500" />
-                Equipe com mais de 10 veterinários.
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="text-red-500" />
-                Qualidade é nossa prioridade.
-              </li>
-            </ul>
 
             <div className="flex gap-2">
               <a
                 target="_blank"
                 href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações`}
-                className="bg-[#E84C3D] text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
+                className="bg-[#9b0e11] text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
               >
                 <WhatsappLogo className="w-5 h-5 text-white" />
                 Contato via WhatsApp
-              </a>
-
-              <a
-                href="#"
-                className=" flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
-              >
-                <MapPin className="w-5 h-5 text-black" />
-                Endereço da loja
               </a>
             </div>
           </div>

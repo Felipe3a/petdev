@@ -4,53 +4,66 @@ import useEmblaCarousel from "embla-carousel-react";
 import {
   ChevronLeft,
   ChevronRight,
-  Scissors,
-  Syringe,
-  CarTaxiFront,
-  Hotel,
-  Clock,
+  Zap,
+  ShieldAlert,
+  Phone,
+  Cctv,
+  SquareUser,
+  Columns3Cog,
 } from "lucide-react";
 import { WhatsappLogo } from "@phosphor-icons/react";
 
 const services = [
   {
-    title: "Banho & Tosa",
+    title: "Portões Automaticos",
     description:
-      "Inclui banho com produtos específicos para o tipo de pelagem e pele do animal, corte de unhas, limpeza das orelhas e tosa personalizada (higiênica ou estilizada).",
-    duration: "1h",
-    price: "$50",
-    icon: <Scissors />,
+      "Na ADR System, oferecemos soluções modernas em portões automáticos que unem segurança, praticidade e durabilidade. Trabalhamos com sistemas de alta qualidade, que garantem mais conforto no seu dia a dia e proteção para o seu patrimônio.",
+
+    icon: <Columns3Cog />,
     linkText:
-      "Olá, vi no site sobre Banho e tosa e gostaria de mais informações.",
+      "Olá, vi no site sobre Portões Automaticos e gostaria de mais informações.",
   },
   {
-    title: "Consulta Veterinária",
+    title: "CFTV",
     description:
-      "Oferece atendimento clínico básico ou especializado para cuidar da saúde do animal. Inclui diagnóstico de doenças, aplicação de vacinas obrigatórias.",
-    duration: "1h",
-    price: "$45",
-    icon: <Syringe />,
-    linkText:
-      "Olá, vi no site sobre Consulta veterinária e gostaria de mais informações.",
+      "Com os sistemas de CFTV da ADR System, você acompanha tudo o que acontece em tempo real, de onde estiver. Nossas câmeras de segurança oferecem alta definição, confiabilidade e monitoramento contínuo, garantindo mais proteção para sua casa ou empresa.",
+
+    icon: <Cctv />,
+    linkText: "Olá, vi no site sobre CFTV e gostaria de mais informações.",
   },
   {
-    title: "Táxi Pet",
+    title: "Alarmes",
     description:
-      "Serviço de transporte para levar e buscar os pets no petshop, clínicas veterinárias ou outros locais. Ideal para tutores que não têm tempo ou transporte adequado para locomover os animais.",
-    duration: "2h",
-    price: "$80",
-    icon: <CarTaxiFront />,
-    linkText: "Olá, vi no site sobre Táxi Pet e gostaria de mais informações.",
+      "Os sistemas de alarmes da ADR System oferecem detecção rápida e precisa contra invasões, garantindo uma resposta imediata para proteger o que realmente importa. Trabalhamos com equipamentos modernos que unem tecnologia, confiança e praticidade, trazendo mais tranquilidade para sua casa ou empresa.",
+
+    icon: <ShieldAlert />,
+    linkText: "Olá, vi no site sobre Alarmes e gostaria de mais informações.",
   },
   {
-    title: "Hotel para pets",
+    title: "Controle de Acesso",
     description:
-      "Serviço de hospedagem para animais de estimação, ideal para quando os tutores precisam viajar ou se ausentar por alguns dias. Os pets ficam acomodados em espaços seguros, confortáveis.",
-    duration: "1h",
-    price: "$60",
-    icon: <Hotel />,
+      "Com as soluções de controle de acesso da ADR System, você garante mais segurança e organização no fluxo de pessoas em residências, condomínios e empresas. Nossos sistemas permitem identificação rápida, registros precisos e total praticidade, oferecendo tranquilidade e eficiência no dia a dia.",
+
+    icon: <SquareUser />,
     linkText:
-      "Olá, vi no site sobre Hotel para pets e gostaria de mais informações.",
+      "Olá, vi no site sobre Controle de Acesso e gostaria de mais informações.",
+  },
+  {
+    title: "Cercas Elétricas",
+    description:
+      "As cercas elétricas da ADR System oferecem uma camada extra de proteção e segurança para residências e empresas. Com equipamentos modernos e confiáveis, garantimos barreira eficiente contra invasões, aliando tecnologia e tranquilidade para o seu patrimônio.",
+
+    icon: <Zap />,
+    linkText: "Olá, vi no site sobre Alarmes e gostaria de mais informações.",
+  },
+  {
+    title: "Interfones",
+    description:
+      "Os interfones da ADR System proporcionam comunicação segura e prática entre ambientes, seja em residências, condomínios ou empresas. Com tecnologia moderna, nossos sistemas oferecem alta qualidade, garantindo mais controle e conveniência no dia a dia.",
+
+    icon: <Phone />,
+    linkText:
+      "Olá, vi no site sobre Interfones e gostaria de mais informações.",
   },
 ];
 
@@ -101,10 +114,7 @@ export function Services() {
                     </div>
 
                     <div className="border-t border-gray-700 pt-4 flex items-center justify-between">
-                      <div className="flex items-center gap-2 text-sm">
-                        <Clock className="w-4 h-4" />
-                        <span>{item.duration}</span>
-                      </div>
+                      <div className="flex items-center gap-2 text-sm"></div>
 
                       <a
                         target="_blank"

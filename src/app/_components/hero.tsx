@@ -1,6 +1,6 @@
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
-import dogImg from "../../../public/images/hero-dog.webp";
-import catImg from "../../../public/images/cat-hero.png";
+import motorImg from "../../../public/images/Design sem nome (10).png";
+import logoImg from "../../../public/images/Design sem nome (7).png";
 import Image from "next/image";
 
 export function Hero() {
@@ -8,7 +8,7 @@ export function Hero() {
     <section className="bg-[#E84C3D] text-white relative overflow-hidden">
       <div>
         <Image
-          src={dogImg}
+          src={motorImg}
           alt="Foto do cachorro"
           fill
           sizes="100vw"
@@ -19,17 +19,19 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto pt-16 pb-16 md:pb-0 px-4 relative">
-        <article className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <article className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="space-y-6">
             <h1
               className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10"
               data-aos="fade-down"
             >
-              Seu pet merece cuidado, carinho e atenção especial.
+              ADR System Sua segurança é o nosso maior compromisso!
             </h1>
             <p className=" lg:text-lg" data-aos="fade-right">
-              Oferecemos os melhores serviços para garantir o bem-estar e a
-              felicidade do seu amigo de quatro patas.
+              Proteger o que você mais valoriza vai além de instalar
+              equipamentos. Nosso trabalho é oferecer tranquilidade, confiança e
+              tecnologia de ponta para garantir a sua segurança e a de quem você
+              ama.
             </p>
 
             <a
@@ -52,7 +54,7 @@ export function Hero() {
               <div className="flex mt-4">
                 <div className="w-32 hidden lg:block">
                   <Image
-                    src={catImg}
+                    src={logoImg}
                     alt="Foto do gato"
                     quality={100}
                     className="object-fill"
@@ -64,7 +66,7 @@ export function Hero() {
 
           <div className="hidden md:block h-full relative">
             <Image
-              src={dogImg}
+              src={motorImg}
               alt="Foto do dog"
               className="object-contain"
               fill
