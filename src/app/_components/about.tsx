@@ -1,6 +1,6 @@
 import Image from "next/image";
-import about1Img from "../../../public/images/about-1.png";
-import about2Img from "../../../public/images/about-2.png";
+import about1Img from "../../../public/images/intercomunicador-no-portao-principal-edificio-residencial (1).jpg";
+import about2Img from "../../../public/images/seguranca-de-carro-inteligente-desbloqueada-via-remix-digital-de-smartphone.jpg";
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
 
 export function About() {

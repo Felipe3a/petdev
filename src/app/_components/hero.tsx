@@ -25,7 +25,7 @@ export function Hero() {
               className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10"
               data-aos="fade-down"
             >
-              ADR System Sua segurança é o nosso maior compromisso!
+              ADR System Sua segurança é o nosso compromisso!
             </h1>
             <p className=" lg:text-lg" data-aos="fade-right">
               Proteger o que você mais valoriza vai além de instalar
@@ -46,11 +46,6 @@ export function Hero() {
             </a>
 
             <div className="mt-8">
-              <p className="text-sm mb-4">
-                <b className="bg-black text-white px-2 py-1 rounded-md">5%</b>{" "}
-                de desconto na primeira compra.
-              </p>
-
               <div className="flex mt-4">
                 <div className="w-32 hidden lg:block">
                   <Image
