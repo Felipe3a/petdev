@@ -98,7 +98,7 @@ export function Services() {
                   key={index}
                   className="flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3"
                 >
-                  <article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
+                  <article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col ">
                     <div className="flex-1 flex items-start justify-between">
                       <div className="flex gap-3">
                         <span className="text-3xl">{item.icon}</span>
@@ -119,7 +119,7 @@ export function Services() {
                       <a
                         target="_blank"
                         href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações sbore ${item.title}`}
-                        className="flex items-center justify-center gap-2 hover:bg-red-500 px-4 py-1 rounded-md duration-300"
+                        className="flex items-center justify-center gap-2 hover:bg-red-500 px-4 py-1 rounded-md  transition-transform duration-300 hover:scale-110 hover:shadow-lg"
                       >
                         <WhatsappLogo className="w-5 h-5" />
                         Entrar em contato

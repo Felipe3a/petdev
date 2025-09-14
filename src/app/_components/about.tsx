@@ -58,8 +58,8 @@ export function About() {
             <div className="flex gap-2">
               <a
                 target="_blank"
-                href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações`}
-                className="bg-[#9b0e11] text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
+                href={`https://wa.me/5511937112315?text=Olá vim pelo site e gostaria de mais informações`}
+                className="bg-[#9b0e11] text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md transition-transform duration-300 hover:scale-110 hover:shadow-lg"
               >
                 <WhatsappLogo className="w-5 h-5 text-white" />
                 Contato via WhatsApp

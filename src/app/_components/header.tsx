@@ -77,7 +77,7 @@ const Header: React.FC = () => {
           isMenuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <a href="#home" onClick={closeMenu} className="hover:text-[#E84c3d]">
+        <a href="#home" onClick={closeMenu} className="hover:text-[#E84c3d] ">
           Home
         </a>
         <a href="#sobre" onClick={closeMenu} className="hover:text-[#E84c3d]">

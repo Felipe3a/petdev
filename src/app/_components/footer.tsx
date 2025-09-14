@@ -17,14 +17,16 @@ import {
 // Importar o logo da ADR System (assumindo que seja o mesmo usado no header ou uma versão específica)
 // Certifique-se de que o caminho para o seu logo esteja correto
 import adrLogo from "../../../public/images/Design sem nome (7).png"; // <-- Adicione esta linha
+import { link } from "fs";
 
 const brands = [
-  { name: "Intelbras", logo: intelbras },
-  { name: "ppa", logo: ppa },
-  { name: "Control-id", logo: control_id },
-  { name: "JFL", logo: jfl },
-  { name: "ipec", logo: ipec },
-  { name: "hikvision", logo: hikvision },
+  
+  { name: "Intelbras", logo: intelbras, link: "https://www.intelbras.com.br/" },
+  { name: "ppa", logo: ppa, link: "https://www.ppa.com.br/" },
+  { name: "Control-id", logo: control_id, link: "https://www.controlid.com.br/" },
+  { name: "JFL", logo: jfl, link: "https://www.jfl.com.br/" },
+  { name: "ipec", logo: ipec, link: "https://www.ipec.com.br/" },
+  { name: "hikvision", logo: hikvision, link: "https://www.hikvision.com/pt-br/" },
 ];
 
 export function Footer() {
@@ -40,8 +42,14 @@ export function Footer() {
             {brands.map((item, index) => (
               <div
                 key={index}
-                className="bg-white p-4 rounded-lg flex items-center justify-center"
+                className="bg-white p-4 rounded-lg flex items-center justify-center transition-transform duration-300 hover:scale-110 hover:shadow-lg"
               >
+                  <a
+    href={item.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center"
+  >
                 <Image
                   src={item.logo}
                   alt={item.name}
@@ -52,8 +60,9 @@ export function Footer() {
                     width: "auto",
                     height: "auto",
                   }}
-                  className="object-contain"
+                  className="object-contain "
                 />
+                </a>
               </div>
             ))}
           </div>
@@ -75,8 +84,8 @@ export function Footer() {
               data-aos="fade-up"
               data-aos-delay="500"
               target="_blank"
-              href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações`}
-              className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2"
+              href={`https://wa.me/5511937112315?text=Olá vim pelo site e gostaria de mais informações`}
+              className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2 transition-transform duration-300 hover:scale-110 hover:shadow-lg"
             >
               <WhatsappLogo className="w-5 h-5" />
               Contato via WhatsApp
@@ -86,21 +95,21 @@ export function Footer() {
           <div>
             <h3 className="text-2xl font-semibold mb-2">Contatos</h3>
             <p>Email: teste@teste.com</p>
-            <p>Telefone: (XX) 1231831238</p>
-            <p>Rua X, centro, Campo Grande | MS</p>
+            <p>Telefone: (11) 9 3711-2315</p>
+            
           </div>
 
           <div>
             <h3 className="text-2xl font-semibold mb-2">Redes sociais</h3>
-            <div className="flex gap-4">
-              <a href="#" target="_blank">
-                <FacebookLogo className="w-8 h-8" />
+            <div className="flex gap-4 ">
+              <a href="https://www.instagram.com/adrsystemoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <FacebookLogo className="w-8 h-8 transition-transform duration-300 hover:scale-110 hover:shadow-lg" />
               </a>
-              <a href="#" target="_blank">
-                <InstagramLogo className="w-8 h-8" />
+              <a href="https://www.instagram.com/adrsystemoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <InstagramLogo className="w-8 h-8 transition-transform duration-300 hover:scale-110 hover:shadow-lg" />
               </a>
-              <a href="#" target="_blank">
-                <YoutubeLogo className="w-8 h-8" />
+              <a href="https://www.instagram.com/adrsystemoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <YoutubeLogo className="w-8 h-8 transition-transform duration-300 hover:scale-110 hover:shadow-lg" />
               </a>
             </div>
           </div>

@@ -10,12 +10,16 @@ export default function Home() {
   return (
     <main>
       <AosInit />
-      <Header />
-      <Hero />
-      <About />
-      <Services />
+    
+<section id="home">  <Header /></section>
 
-      <Footer />
+      <section id="hero"><Hero /></section>
+      <section id="sobre"> <About /></section>
+     <section id="servicos"> <Services /></section> 
+      <section id="contato"><Footer /></section>
+     
+
+      
     </main>
   );
 }
