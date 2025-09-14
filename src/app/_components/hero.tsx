@@ -1,11 +1,23 @@
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
 import motorImg from "../../../public/images/Design sem nome (10).png";
 import logoImg from "../../../public/images/Design sem nome (7).png";
+import bg from "../../../public/images/Design sem nome.png"
 import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="bg-[#E84C3D] text-white relative overflow-hidden">
+    <section className=" text-white relative overflow-hidden">
+        <Image
+    src={bg}
+    alt="Background"
+    fill
+    sizes="100vw"
+    className="object-cover"
+    priority
+  />
+  <div className="container mx-auto pt-16 pb-16 md:pb-0 px-4 relative">
+    ...
+  </div>
       <div>
         <Image
           src={motorImg}
