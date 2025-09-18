@@ -33,7 +33,7 @@ export function Hero() {
           
           {/* Lado esquerdo: texto + botão + logo */}
           <div className="space-y-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight"  translate="no">
               ADR System Sua segurança é o nosso compromisso!
             </h1>
             <p className="lg:text-lg">

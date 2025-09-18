@@ -1,9 +1,10 @@
 import { Hero } from "./_components/hero";
 import { About } from "./_components/about";
 import { Services } from "./_components/services";
-import { Testimonials } from "./_components/testimonials";
+
 import { Footer } from "./_components/footer";
 import Header from "./_components/header";
+import { Fps } from "./_components/fps";  
 import { AosInit } from "./_components/aos-init";
 
 export default function Home() {
@@ -17,8 +18,7 @@ export default function Home() {
       <section id="sobre"> <About /></section>
      <section id="servicos"> <Services /></section> 
       <section id="contato"><Footer /></section>
-     
-
+     <Fps/>        
       
     </main>
   );

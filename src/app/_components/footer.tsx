@@ -83,8 +83,8 @@ export function Footer() {
             <a
               data-aos="fade-up"
               data-aos-delay="500"
-              target="_blank"
-              href={`https://wa.me/5511937112315?text=Olá vim pelo site e gostaria de mais informações`}
+              target="_blank" href={`https://wa.me/5511937112315?text=Olá vim pelo site e gostaria de mais informações`}
+             
               className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2 transition-transform duration-300 hover:scale-110 hover:shadow-lg"
             >
               <WhatsappLogo className="w-5 h-5" />
@@ -108,7 +108,7 @@ export function Footer() {
               <a href="https://www.instagram.com/adrsystemoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
                 <InstagramLogo className="w-8 h-8 transition-transform duration-300 hover:scale-110 hover:shadow-lg" />
               </a>
-              <a href="https://www.instagram.com/adrsystemoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+              <a href="https://www.youtube.com/@ADR_SYSTEM2025" target="_blank">
                 <YoutubeLogo className="w-8 h-8 transition-transform duration-300 hover:scale-110 hover:shadow-lg" />
               </a>
             </div>

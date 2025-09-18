@@ -42,7 +42,7 @@ export function About() {
           >
             <h2 className="text-4xl font-bold">SOBRE</h2>
 
-            <p>
+            <p translate="no">
               A ADR System nasceu com o propósito de levar segurança, tecnologia
               e praticidade para residências, condominios e empresas. Atuamos
               com soluções modernas em segurança eletrônica e automação de
