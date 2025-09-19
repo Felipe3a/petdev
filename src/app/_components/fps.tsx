@@ -9,7 +9,7 @@ export function Fps() {
           className="text-green-400 hover:text-green-300 font-semibold"
            translate="no"
         >
-          FPS<i>coders</i>
+          FPS <i>coders</i>
         </a>
       </p>
     </footer>
