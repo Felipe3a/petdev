@@ -1,7 +1,7 @@
 import { Hero } from "./_components/hero";
 import { About } from "./_components/about";
 import { Services } from "./_components/services";
-
+import SlideshowAuto from "./_components/slide";
 import { Footer } from "./_components/footer";
 import Header from "./_components/header";
 import { Fps } from "./_components/fps";  
@@ -13,8 +13,9 @@ export default function Home() {
       <AosInit />
     
 <section id="home">  <Header /></section>
-
+ <section>  <SlideshowAuto /></section>
       <section id="hero"><Hero /></section>
+      
       <section id="sobre"> <About /></section>
      <section id="servicos"> <Services /></section> 
       <section id="contato"><Footer /></section>
